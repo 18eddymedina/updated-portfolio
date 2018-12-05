@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Eduardo's Portfolio</title>
+  <title>Portfolio - Eduardo Medina</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,23 +11,35 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+
+  <nav id="name" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+
+            </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
 
-      </ul>
+            </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+ 
+
+  <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" href="#name">
+        <i class="large material-icons">arrow_upward</i>
+      </a>
+  </div>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -36,8 +48,7 @@
     </div>
   </div>
 
-
-  <div class="container">
+  <div id="about" class="container">
     <div class="section">
             <div class="row center">
                     <h3 class="header col s12 light">About</h3>
@@ -46,7 +57,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">school</i></h2>
+            <h2 class="center red-text"><i class="material-icons">school</i></h2>
             <h5 class="center">Eduation</h5>
 
             <p class="light">Recent graduate from The University of Texas Rio Grande Valley with a Bachelor's of Scinece in Computer Engineering. I am currently enrolled in a Full Stack Web Development course at The University of Texas at Austin which award a Certificate in Development in March 2019.</p>
@@ -55,7 +66,7 @@
 
         <div  class="col s12 m4">
           <div id="skills" class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">code</i></h2>
+            <h2 class="center red-text"><i class="material-icons">code</i></h2>
             <h5 class="center">Skills</h5>
 
             <p class="light">
@@ -72,7 +83,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">business_center</i></h2>
+            <h2 class="center red-text"><i class="material-icons">business_center</i></h2>
             <h5 class="center">Goals</h5>
 
             <p class="light">Searching to work with an enthusiastic programming team. I would love to work in any aspect of Software Engineering such as QA Automation Testing and/or Full Stack Web Development. Ready to learn  everything needed to be a great Software Engineer.  </p>
@@ -81,43 +92,135 @@
       </div>
 
     </div>
-    <br><br>
+    <br>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
+
+  <div id="portfolio" class="container">
+    <div class="section">
+            <div class="row center">
+                    <h3 class="header col s12 light">Portfolio</h3>
+            </div>
+      <!--   Icon Section   -->
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">theaters</i>Reel-Match</div>
+            <div class="collapsible-body"><span>
+              <a href="http://reel-match.com">
+              This website is a movie recommendation generator. It allows users to create an account and login. This allows all of their seaches to be saved though firebase. The website works by selecting/deselecting your favorite movies, then check your generated reccomended movies based off your favorites.
+              </a></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">train</i>Real Time Train Schedule</div>
+            <div class="collapsible-body"><span>
+              This website allows one to create a train schedule using moment.js. The schedule is in real time and provides the start time, next train, and interval of each train.
+            
+            </span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">hourglass_empty</i>Trivia Game</div>
+            <div class="collapsible-body"><span>
+              <div>
+                <a href="https://18eddymedina.github.io/TriviaGame/">
+
+              Lorem ipsum dolor sit amet.
+            
+            </a>
+            </span></div>
+          </li>
+
+          <li>
+              <div class="collapsible-header"><i class="material-icons">gif</i>Giphy App</div>
+              <div class="collapsible-body"><span>
+                  <a href="https://18eddymedina.github.io/Giphy-API/">
+
+                Lorem ipsum dolor sit amet.
+              </a>
+              </span></div>
+            </li>
+
+            <li>
+                <div class="collapsible-header"><i class="material-icons">videogame_asset</i>RPG Game</div>
+                <div class="collapsible-body"><span>
+                    <a href="https://18eddymedina.github.io/unit-4-game/">
+
+                  Lorem ipsum dolor sit amet.</a></span></div>
+              </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <br>
+  </div>
 
 
+
+  <div id="contact" class="container">
+      <div class="section">
+              <div class="row center">
+                      <h3 class="header col s12 light">Contact</h3>
+              </div>
+        <!--   Icon Section   -->
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+                   
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+            
+            </form>
+          </div>
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+              </form>
+            </div>    
+        
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+  
       </div>
+      <br>
+    
+      <div id="resume" class="container">
+        <div class="section">
+          <div class="row center">
+            <h3 class="header col s12 light">Resume</h3>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
+        
+      <img id= "resume" src = "resume.jpg" />   
+      <a id="link" href ="resume.pdf">Download Resume</a>
+          
+          </div>
+    
+        </div>
+
+  
+
+
+
+  <footer class="page-footer navy">
+    
+  
   </footer>
 
 

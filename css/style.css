@@ -6,10 +6,16 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
-nav{
-  position: fixed;
-  z-index: 25;
-}
+  
 #skills{
 align-items: flex-end;
+}
+#resume{
+max-width: 100%;
+}
+
+#link{
+align-items: center
+
+
 }
