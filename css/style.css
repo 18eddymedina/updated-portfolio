@@ -11,6 +11,5 @@ nav{
   z-index: 25;
 }
 #skills{
-text-align: center;
-
+align-items: flex-end;
 }
